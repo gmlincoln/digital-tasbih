@@ -81,10 +81,16 @@ decrementAllahuakbarBtn.addEventListener('click',function(){
 
 
 resetBtn.addEventListener('click',function(){
-    subhanAllahInitialValue = 0;
-    displaySubhanAllah.innerText = subhanAllahInitialValue;
-    alhamdulillahInitialValue = 0;
-    displayAlhamdulillah.innerText = alhamdulillahInitialValue;
-    allahuAkbarInitialValue = 0;
-    displayAllahuakbar.innerText = allahuAkbarInitialValue;
+    
+    if(subhanAllahInitialValue === 0 && alhamdulillahInitialValue === 0 && allahuAkbarInitialValue ===0){
+        alert('Nothing to Reset!');
+    }
+    else{
+        subhanAllahInitialValue = 0;
+        displaySubhanAllah.innerText = subhanAllahInitialValue;
+        alhamdulillahInitialValue = 0;
+        displayAlhamdulillah.innerText = alhamdulillahInitialValue;
+        allahuAkbarInitialValue = 0;
+        displayAllahuakbar.innerText = allahuAkbarInitialValue;
+    }
 })
